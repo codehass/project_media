@@ -60,3 +60,55 @@
 .fa-youtube {
   color: red;
 }
+
+.container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+  background-color: beige;
+}
+
+.video {
+  /* background-color: red; */
+  width: 60%;
+  height: 100vh;
+}
+
+.bar-right {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 40%;
+  background-color: yellow;
+  height: 100vh;
+}
+
+.video p {
+  margin: 20px auto;
+  font-size: 24px;
+}
+
+.element {
+  display: flex;
+  font-size: 20px;
+  margin: 10px auto;
+}
+
+.element span {
+  padding-right: 20px;
+  font-size: 12px;
+}
+
+.element i {
+  padding-right: 8px;
+}
+
+.element a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  padding-right: 16px;
+  justify-content: center;
+  align-items: center;
+}
