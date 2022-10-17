@@ -73,6 +73,7 @@
   /* background-color: red; */
   width: 60%;
   height: 100vh;
+  border-bottom: 1px solid black;
 }
 
 .bar-right {
@@ -85,19 +86,22 @@
 }
 
 .video p {
-  margin: 20px auto;
+  margin: 20px 10px;
   font-size: 24px;
 }
 
 .element {
   display: flex;
   font-size: 20px;
-  margin: 10px auto;
+  margin: 10px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .element span {
-  padding-right: 20px;
-  font-size: 12px;
+  padding-right: 10px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .element i {
@@ -108,7 +112,72 @@
   display: flex;
   text-decoration: none;
   color: black;
-  padding-right: 16px;
+
+  align-items: center;
+}
+
+.subscrib {
+  margin-top: 30px;
+  padding: 15px;
+  border-bottom: 1px solid black;
+
+  padding-bottom: 30px;
+}
+
+.chanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chanel div {
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+.chanel div img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.chanel button {
+  color: #fff;
+  background-color: red;
+  font-size: 16px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subscrib .description {
+  width: 80%;
+  font-size: 12px;
+  margin: auto;
+  font-weight: 500;
+  padding: 10px;
+}
+
+/* ******************
+***** bar-right *****
+*********************/
+.bar-right {
+  margin: auto;
+  display: flex;
+}
+
+.s-video {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.s-video img {
+  /* width: 50%; */
+  height: 120px;
+}
+
+.v-desc {
+  /* width: 40%; */
 }
