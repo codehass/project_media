@@ -61,19 +61,24 @@
   color: red;
 }
 
+/* *****************
+**** Container **
+***************** */
+
 .container {
   position: relative;
-  width: 80%;
+  width: 90%;
   margin: auto;
   padding-top: 30px;
   background-color: beige;
 }
 
 .video {
-  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
   width: 60%;
   height: 100vh;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 .bar-right {
@@ -93,9 +98,10 @@
 .element {
   display: flex;
   font-size: 20px;
-  margin: 10px;
+  padding-bottom: 30px;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 1px solid black;
 }
 
 .element span {
@@ -112,16 +118,14 @@
   display: flex;
   text-decoration: none;
   color: black;
-
   align-items: center;
 }
 
 .subscrib {
-  margin-top: 30px;
-  padding: 15px;
+  position: relative;
+  margin-top: 10px;
   border-bottom: 1px solid black;
-
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .chanel {
