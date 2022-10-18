@@ -3,15 +3,21 @@
   font-family: "Roboto", "Arial", sans-serif;
 }
 
+body {
+  background-color: rgb(14, 14, 13);
+}
 .nav-bar {
-  background-color: antiquewhite;
-  height: 50px;
+  background-color: rgb(39, 38, 38);
+  height: 60px;
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
 }
 
 .nav-left {
@@ -20,15 +26,20 @@
   align-items: center;
 }
 
+.fa-bars {
+  color: #fff;
+}
+
 .fa-youtube {
   padding-left: 20px;
   font-size: 30px;
+  margin-right: 5px;
 }
 
 .nav-left p {
   font-size: 20px;
   font-weight: bold;
-  /* color: #fff; */
+  color: #fff;
 }
 
 .nav-mdl {
@@ -60,39 +71,65 @@
 .fa-youtube {
   color: red;
 }
-
+.nav-right i {
+  color: #fff;
+}
 /* *****************
 **** Container **
 ***************** */
 
 .container {
+  display: flex;
+  gap: 20px;
   position: relative;
   width: 90%;
   margin: auto;
   padding-top: 30px;
-  background-color: beige;
+  /* background-color: rgb(14, 14, 13); */
+  top: 60px;
+  z-index: -1;
+}
+
+/* *****************
+**** video **
+***************** */
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .video {
   display: flex;
   flex-direction: column;
-  width: 60%;
-  height: 100vh;
+  flex-basis: 60%;
+  /* height: 100vh; */
   /* border-bottom: 1px solid black; */
 }
 
-.bar-right {
+/* .bar-right {
   position: absolute;
   top: 30px;
   right: 0;
   width: 40%;
   background-color: yellow;
   height: 100vh;
-}
+} */
 
-.video p {
+.title-vid {
   margin: 20px 10px;
-  font-size: 24px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
 }
 
 .element {
@@ -108,10 +145,12 @@
   padding-right: 10px;
   font-size: 14px;
   font-weight: 500;
+  color: #fff;
 }
 
 .element i {
   padding-right: 8px;
+  color: #fff;
 }
 
 .element a {
@@ -122,20 +161,20 @@
 }
 
 .subscrib {
-  position: relative;
-  margin-top: 10px;
+  margin: 10px 20px 20px 10px;
   border-bottom: 1px solid black;
-  padding-bottom: 20px;
 }
 
 .chanel {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 15px;
 }
 
 .chanel div {
   display: flex;
+  gap: 20px;
   justify-content: center;
   align-items: center;
 }
@@ -161,20 +200,69 @@
   margin: auto;
   font-weight: 500;
   padding: 10px;
+  color: #fff;
+}
+/* ******************
+***** bar-right *****
+*********************/
+.comments {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 20px;
+  justify-content: space-between;
 }
 
+.comt {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 20px;
+  /* align-items: center; */
+}
+
+.comt img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.cmt-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.cmt-cont div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.cmt-cont div p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+.cmt-cont div span {
+  font-size: 12px;
+  color: rgb(105, 111, 116);
+}
+
+.comments .cmt-desc {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #fff;
+}
 /* ******************
 ***** bar-right *****
 *********************/
 .bar-right {
   margin: auto;
   display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .s-video {
   display: flex;
-  justify-content: space-between;
-  align-content: center;
+  gap: 2%;
 }
 
 .s-video img {
@@ -184,4 +272,19 @@
 
 .v-desc {
   /* width: 40%; */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.v-desc p {
+  font-size: 16px;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.v-desc span {
+  font-size: 12px;
+  padding-left: 10px;
+  color: rgb(105, 111, 116);
 }
